@@ -40,7 +40,7 @@
 			<h1>PeerFact</h1>
 		</section>
 
-		<div>
+		<div class="proof-iframe">
 			<script>
 				function getParameterByName(name, url) {
 						if (!url) url = window.location.href;
@@ -51,7 +51,7 @@
 						if (!results[2]) return '';
 						return decodeURIComponent(results[2].replace(/\+/g, " "));
 				}
-				document.write('<iframe class="proof-iframe" src="' + getParameterByName("url") + '"></iframe>');
+				document.write('<iframe src="' + getParameterByName("url") + '"></iframe>');
 			</script>
 		</div>
 
