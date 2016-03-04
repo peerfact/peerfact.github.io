@@ -51,7 +51,7 @@
 						if (!results[2]) return '';
 						return decodeURIComponent(results[2].replace(/\+/g, " "));
 				}
-				document.write('<iframe src="' + getParameterByName("url") + '"></iframe>');
+				document.write('<iframe sandbox="allow-forms allow-popups allow-pointer-lock allow-same-origin allow-scripts" src="' + getParameterByName("url") + '"></iframe>');
 			</script>
 		</div>
 
