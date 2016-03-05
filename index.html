@@ -28,11 +28,28 @@
     <meta name="theme-color" content="#ffffff">
 
     <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/lmdkgplocnalbbpjdmcejkgkppnolkne">
+    <style>
+    .install-button {
+      background: #168eea;
+      background: -webkit-gradient(linear,left top,left bottom,from(#1f93eb),to(#168eea));
+      background: -webkit-linear-gradient(top,#1f93eb 0,#168eea 100%);
+      background: linear-gradient(to bottom,#1f93eb 0,#168eea 100%);
+      border: 1px solid #137dcf;
+      color: #fff;
+      text-shadow: 0 0 1px rgba(0,0,0,.3);
+      -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.07);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.07);
+      padding: 10px 20px;
+      font-size: 15.4px;
+      font-weight: 400;
+    }
+    </style>
   </head>
   <body>
     <section class="page-header">
       <h1 class="project-name">PeerFact</h1>
       <h2 class="project-tagline">Check It before you Rep It!</h2>
+      <button onclick="chrome.webstore.install()" class="install-button">Install the Extension!</button>
     </section>
 
     <section class="main-content">
