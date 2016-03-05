@@ -8,7 +8,26 @@
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
 		<link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-		<link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/itemID">
+
+		<link rel="apple-touch-icon" sizes="57x57" href="/img/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="/img/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="/img/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="/img/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="/img/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="/img/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="/img/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="/img/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/img/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="/img/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="/img/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+		<link rel="manifest" href="/manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="/img/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
+
+		<link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/lmdkgplocnalbbpjdmcejkgkppnolkne">
 		<style>
 		html, body {
 			height: 100%;
@@ -37,7 +56,6 @@
 		}
 		.proof-ads-text {
 			font-size: 0.75em;
-			margin-top: -5px;
 			text-align: right;
 		}
 		.proof-iframe {
@@ -63,9 +81,45 @@
 			text-shadow: 0 0 1px rgba(0,0,0,.3);
 			-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.07);
 			box-shadow: inset 0 1px 0 rgba(255,255,255,.07);
-			padding: 20px 40px;
+			padding: 10px 20px;
 			font-size: 15.4px;
 			font-weight: 400;
+		}
+		.learn-more a, .learn-more a:visited, .learn-more a:hover {
+			color: #fff;
+			text-decoration: none;
+			padding: 8px 0;
+			display: inline-block;
+		}
+		.adsbygoogle {
+			width: 728px;
+			height: 100px;
+		}
+		@media (max-width: 1080px) {
+			.proof-top {
+				height: 150px;
+				text-align: center;
+			}
+			.proof-top-left, .proof-top-right {
+				float: none;
+			}
+			.proof-iframe {
+				top: 150px;
+			}
+			.learn-more {
+				display: none;
+			}
+			.adsbygoogle {
+				margin: 0 auto;
+				width: 320px;
+				height: 50px;
+			}
+			.proof-ads-text {
+				text-align: center;
+			}
+			.install-button {
+				margin: 8px 0;
+			}
 		}
 		</style>
 	</head>
@@ -74,14 +128,16 @@
 			<div class="proof-top-left">
 				<h4 class="nopad">PeerFact - Check It before you Rep It!</h4>
 				<button onclick="chrome.webstore.install()" class="install-button">Install the Extension!</button>
+				<div class="learn-more"><a href="/">Learn More</a></div>
 			</div>
 			<div class="proof-top-right">
 				<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-				<!-- PeerFact -->
+				<!-- PeerFact Banner -->
 				<ins class="adsbygoogle"
-				     style="display:inline-block;width:728px;height:90px"
+				     style="display:block"
 				     data-ad-client="ca-pub-2400461940436138"
-				     data-ad-slot="7898770901"></ins>
+				     data-ad-slot="3900720103"
+				     data-ad-format="auto"></ins>
 				<script>
 				(adsbygoogle = window.adsbygoogle || []).push({});
 				</script>
