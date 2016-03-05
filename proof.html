@@ -8,21 +8,41 @@
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
 		<link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+		<link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/itemID">
 		<style>
 		html, body {
 			height: 100%;
 			position: relative;
 		}
 		.proof-top {
-			height: 100px;
+			height: 110px;
 			top: 0;
 			position: absolute;
 			left: 0;
 			right: 0;
+			color: #fff;
+			background-color: #159957;
+			background-image: linear-gradient(120deg, #155799, #159957);
+		}
+		.proof-top-left {
+			float: left;
+			padding-left: 10px;
+		}
+		.proof-top-right {
+			float: right;
+		}
+		.nopad {
+			margin: 0;
+			padding: 0;
+		}
+		.proof-ads-text {
+			font-size: 0.75em;
+			margin-top: -5px;
+			text-align: right;
 		}
 		.proof-iframe {
 			position: absolute;
-			top: 100px;
+			top: 110px;
 			bottom: 0;
 			left: 0;
 			right: 0;
@@ -33,11 +53,40 @@
 			width: 100%;
 			height: 100%;
 		}
+		.install-button {
+			background: #168eea;
+			background: -webkit-gradient(linear,left top,left bottom,from(#1f93eb),to(#168eea));
+			background: -webkit-linear-gradient(top,#1f93eb 0,#168eea 100%);
+			background: linear-gradient(to bottom,#1f93eb 0,#168eea 100%);
+			border: 1px solid #137dcf;
+			color: #fff;
+			text-shadow: 0 0 1px rgba(0,0,0,.3);
+			-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.07);
+			box-shadow: inset 0 1px 0 rgba(255,255,255,.07);
+			padding: 20px 40px;
+			font-size: 15.4px;
+			font-weight: 400;
+		}
 		</style>
 	</head>
 	<body>
 		<section class="proof-top">
-			<h1>PeerFact</h1>
+			<div class="proof-top-left">
+				<h4 class="nopad">PeerFact - Check It before you Rep It!</h4>
+				<button onclick="chrome.webstore.install()" class="install-button">Install the Extension!</button>
+			</div>
+			<div class="proof-top-right">
+				<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+				<!-- PeerFact -->
+				<ins class="adsbygoogle"
+				     style="display:inline-block;width:728px;height:90px"
+				     data-ad-client="ca-pub-2400461940436138"
+				     data-ad-slot="7898770901"></ins>
+				<script>
+				(adsbygoogle = window.adsbygoogle || []).push({});
+				</script>
+				<div class="proof-ads-text">Ads help pay for servers.</div>
+			</div>
 		</section>
 
 		<div class="proof-iframe">
