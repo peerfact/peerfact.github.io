@@ -9,6 +9,33 @@
 		<link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
 		<link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
 
+		<script>
+		function getParameterByName(name, url) {
+				if (!url) url = window.location.href;
+				name = name.replace(/[\[\]]/g, "\\$&");
+				var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+						results = regex.exec(url);
+				if (!results) return null;
+				if (!results[2]) return '';
+				return decodeURIComponent(results[2].replace(/\+/g, " "));
+		}
+		</script>
+
+		<!-- Facebook OpenGraph stuff -->
+		<meta property="og:title" content="PeerFact Proof" />
+		<script>
+		var type = getParameterByName("type");
+		if (type == "fact") document.write('<meta property="og:description" content="This post has been marked as fact. Click the link for proof." />');
+		else if (type == "misleading") document.write('<meta property="og:description" content="This post has been marked as misleading. Click the link for an explaination." />');
+		else if (type == "fiction") document.write('<meta property="og:description" content="This post has been marked as not factual. Click the link for proof." />');
+		else document.write('<meta property="og:description" content="This post has been marked as either fact, fiction or misleading. Click the link for proof." />');
+		</script>
+		<meta property="og:type" content="website" />
+		<script>
+		document.write('<meta property="og:url" content="http://www.peerfact.xyz/proof.html?url=' + encodeURIComponent(getParameterByName("url")) + '&type=' + encodeURIComponent(getParameterByName("type")) + '" />');
+		</script>
+		<meta property="og:image" content="http://www.peerfact.xyz/img/apple-icon-180x180.png" />
+
 		<link rel="apple-touch-icon" sizes="57x57" href="/img/apple-icon-57x57.png">
 		<link rel="apple-touch-icon" sizes="60x60" href="/img/apple-icon-60x60.png">
 		<link rel="apple-touch-icon" sizes="72x72" href="/img/apple-icon-72x72.png">
@@ -147,15 +174,6 @@
 
 		<div class="proof-iframe">
 			<script>
-				function getParameterByName(name, url) {
-						if (!url) url = window.location.href;
-						name = name.replace(/[\[\]]/g, "\\$&");
-						var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
-								results = regex.exec(url);
-						if (!results) return null;
-						if (!results[2]) return '';
-						return decodeURIComponent(results[2].replace(/\+/g, " "));
-				}
 				document.write('<iframe sandbox="allow-forms allow-popups allow-pointer-lock allow-same-origin allow-scripts" src="' + getParameterByName("url") + '"></iframe>');
 			</script>
 		</div>
