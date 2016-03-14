@@ -57,12 +57,12 @@
     <section class="page-header">
       <h1 class="project-name">PeerFact</h1>
       <h2 class="project-tagline">Check It before you Rep It!</h2>
-      <button onclick="chrome.webstore.install()" class="install-button">Install the Extension!</button>
+      <button onclick="ga('send', 'event', 'click', 'install', 'plugin');chrome.webstore.install()" class="install-button">Install the Extension!</button>
     </section>
 
     <section class="main-content">
       <h3>Project Details</h3>
-      <p>The goal of PeerFact is to reduce the amount of misinformation that is present on social networks. People's opinions can be formed based on the posts they see on their social networks. I firmly believe that we have a moral imperative to ensure this information be factual to allow for a more informed public. This project is not meant to be partisan, it is meant to be factual.</p>
+      <p>The goal of PeerFact is to reduce the amount of misinformation that is present on social networks. People's opinions can be formed based on the posts they see on their social networks. I believe it is our duty to make sure that information be as accurate as possible to allow for a more informed public. This project is not meant to be partisan, it is meant to be factual.</p>
       
       <h3>How it Works</h3>
       <p>The PeerFact plugin allows every post to be scrutanized by the public at large. If the post is not based in fact, then you may vote the post as not being factual along with a link to proof. Any other user of the plugin will then be able to see the scoring of this post. PeerFact expands upon the usual process of posting a link to a Snopes article or similar in the comments of an incorrect post by routing the proof link through peerfact.xyz for the non-plugin user's to get informed about the peerfact plugin. This allows for a feedback cycle of more users being able to filter through posts that are not correct.</p>
