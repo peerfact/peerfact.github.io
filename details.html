@@ -34,6 +34,10 @@
 		<meta name="msapplication-TileImage" content="/img/ms-icon-144x144.png">
 		<meta name="theme-color" content="#ffffff">
 
+		<script src="js/promise.js"></script>
+		<script src="js/fetch.js"></script>
+		<script src="js/jquery.js"></script>
+
 		<link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/lmdkgplocnalbbpjdmcejkgkppnolkne">
 		<style>
 		html, body {
@@ -146,20 +150,41 @@
 			</div>
 		</section>
 
-		<div class="details-body">
-			TODO pull description of website
-		</div>
+		<div class="details-body"></div>
 
-<script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-ga('create', 'UA-73675818-1', 'auto');
-ga('send', 'pageview');
+		ga('create', 'UA-73675818-1', 'auto');
+		ga('send', 'pageview');
+		</script>
 
-</script>
+		<script>
+		function getParameterByName(name, url) {
+			if (!url) url = window.location.href;
+			name = name.replace(/[\[\]]/g, "\\$&");
+			var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+					results = regex.exec(url);
+			if (!results) return null;
+			if (!results[2]) return '';
+			return decodeURIComponent(results[2].replace(/\+/g, " "));
+		}
+		(function () {
+			var domain = getParameterByName('domain');
+			if (domain) {
+				fetch('hosts/' + getParameterByName('domain') + '.json').then(function (res) {
+					return res.json();
+				}).then(function (data) {
+					$(".details-body").html("<h1>" + data.title + "</h1><p>" + data.reason + "</p>");
+				});
+			} else {
+				$(".details-body").html("<p>You need to supply a host name to get details.</p>");
+			}
+		})();
+		</script>
 
 	</body>
 </html>
