@@ -175,10 +175,10 @@
 		(function () {
 			var domain = getParameterByName('domain');
 			if (domain) {
-				fetch('hosts/' + getParameterByName('domain') + '.json').then(function (res) {
+				fetch('hosts/' + domain + '.json').then(function (res) {
 					return res.json();
 				}).then(function (data) {
-					$(".details-body").html("<h3>" + data.title + "</h3><p>" + data.reason + "</p>");
+					$(".details-body").html("<h3>" + data.title + " (" + domain + ")</h3><p>" + data.reason + "</p>");
 				});
 			} else {
 				$(".details-body").html("<p>You need to supply a host name to get details.</p>");
