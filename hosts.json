@@ -1,4 +1,5 @@
 {
+    "postSelector": "._3ccb",
     "fakenews": [
         "http://americannews.com/"
     ]
