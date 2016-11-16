@@ -5,6 +5,51 @@
     "fakenews": [
         {
             "host": "americannews.com"
+        },
+        {
+            "host": "abcnews.com.co"
+        },
+        {
+            "host": "civictribune.com"
+        },
+        {
+            "host": "creambmp.com"
+        },
+        {
+            "host": "dcgazette.com"
+        },
+        {
+            "host": "drudgereport.com.co"
+        },
+        {
+            "host": "enduringvision.com"
+        },
+        {
+            "host": "mediamass.net"
+        },
+        {
+            "host": "megynkelly.us"
+        },
+        {
+            "host": "msnbc.website"
+        },
+        {
+            "host": "nationalreport.net"
+        },
+        {
+            "host": "news-hound.com"
+        },
+        {
+            "host": "newsbiscuit.com"
+        },
+        {
+            "host": "newsmutiny.com"
+        },
+        {
+            "host": "realnewsrightnow.com"
+        },
+        {
+            "host": "rilenews.com"
         }
     ]
 }
