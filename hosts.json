@@ -1,6 +1,7 @@
 {
     "postSelector": "._3ccb",
     "linkSelector": "._52c6",
+    "postInsertSelector": ".userContentWrapper",
     "fakenews": [
         {
             "host": "americannews.com"
