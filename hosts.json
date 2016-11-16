@@ -2,6 +2,8 @@
     "postSelector": "._3ccb",
     "linkSelector": "._52c6",
     "fakenews": [
-        "americannews.com"
+        {
+            "host": "americannews.com"
+        }
     ]
 }
