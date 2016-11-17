@@ -181,7 +181,15 @@
 					$(".details-body").html("<h3>" + data.title + " (" + domain + ")</h3><p>" + data.reason + "</p>");
 				});
 			} else {
-				$(".details-body").html("<p>You need to supply a host name to get details.</p>");
+				fetch('hosts.json').then(function (res) {
+					return res.json();
+				}).then(function (data) {
+					var list = "";
+					for (var i = 0; i < data.fakenews.length; i++) {
+						list += "<li>" + data.fakenews[i].host + "</li>";
+					}
+					$(".details-body").html("<h3>Blacklisted Sites</h3><p>Submit domains to be added <a target='_blank' href='https://github.com/peerfact/peerfact.github.io/issues/new'>here</a></p><ul>" + list + "</ul>");
+				});
 			}
 		})();
 		</script>

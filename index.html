@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
+<head>
     <meta charset="UTF-8">
     <title>PeerFact - Check It before you Rep It!</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -37,68 +37,67 @@
 
     <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/lmdkgplocnalbbpjdmcejkgkppnolkne">
     <style>
-    .install-button {
-      background: #168eea;
-      background: -webkit-gradient(linear,left top,left bottom,from(#1f93eb),to(#168eea));
-      background: -webkit-linear-gradient(top,#1f93eb 0,#168eea 100%);
-      background: linear-gradient(to bottom,#1f93eb 0,#168eea 100%);
-      border: 1px solid #137dcf;
-      color: #fff;
-      text-shadow: 0 0 1px rgba(0,0,0,.3);
-      -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.07);
-      box-shadow: inset 0 1px 0 rgba(255,255,255,.07);
-      padding: 10px 20px;
-      font-size: 15.4px;
-      font-weight: 400;
-    }
+        .install-button {
+            background: #168eea;
+            background: -webkit-gradient(linear,left top,left bottom,from(#1f93eb),to(#168eea));
+            background: -webkit-linear-gradient(top,#1f93eb 0,#168eea 100%);
+            background: linear-gradient(to bottom,#1f93eb 0,#168eea 100%);
+            border: 1px solid #137dcf;
+            color: #fff;
+            text-shadow: 0 0 1px rgba(0,0,0,.3);
+            -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.07);
+            box-shadow: inset 0 1px 0 rgba(255,255,255,.07);
+            padding: 10px 20px;
+            font-size: 15.4px;
+            font-weight: 400;
+        }
     </style>
-  </head>
-  <body>
+</head>
+<body>
     <section class="page-header">
-      <h1 class="project-name">PeerFact</h1>
-      <h2 class="project-tagline">Check It before you Rep It!</h2>
-      <button onclick="chrome.webstore.install();ga('send', 'event', 'click', 'install', 'plugin')" class="install-button">Install the Extension!</button>
+        <h1 class="project-name">PeerFact</h1>
+        <h2 class="project-tagline">Check It before you Rep It!</h2>
+        <button onclick="chrome.webstore.install();ga('send', 'event', 'click', 'install', 'plugin')" class="install-button">Install the Extension!</button>
     </section>
 
     <section class="main-content">
-      <h3>Project Details</h3>
-      <p>The goal of PeerFact is to reduce the amount of misinformation that is present on social networks. People's opinions can be formed based on the posts they see on their social networks. I believe it is our duty to make sure that information be as accurate as possible to allow for a more informed public. This project is not meant to be partisan, it is meant to be factual.</p>
+        <h3>Project Details</h3>
+        <p>The goal of PeerFact is to reduce the amount of misinformation that is present on social networks. People's opinions can be formed based on the posts they see on their social networks. I believe it is our duty to make sure that information be as accurate as possible to allow for a more informed public. This project is not meant to be partisan, it is meant to be factual.</p>
 
-      <h3>How it Works</h3>
-      <p>The PeerFact plugin will scan every post that appears in your news feed and automatically flag posts that are being shared from known fake news sites.</p>
+        <h3>How it Works</h3>
+        <p>The PeerFact plugin will scan every post that appears in your news feed and automatically flag posts that are being shared from known fake news sites.</p>
 
-       <p><img src="/img/example.jpg" style="max-width: 100%; display: block;" /></p>
+        <p><img src="/img/example.jpg" style="max-width: 100%; display: block;" /></p>
 
-      <h3>Support</h3>
-      <p>This is a side project for me right now, so I welcome any donations to allow me to put more time into this. Thanks.</p>
+        <h3>Support</h3>
+        <p>This is a side project for me right now, so I welcome any donations to allow me to put more time into this. Thanks.</p>
 
-      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-      <input type="hidden" name="cmd" value="_s-xclick">
-      <input type="hidden" name="hosted_button_id" value="KGLVG6A882Y5W">
-      <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-      <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-      </form>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            <input type="hidden" name="cmd" value="_s-xclick">
+            <input type="hidden" name="hosted_button_id" value="KGLVG6A882Y5W">
+            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
 
-      <h3>Contributing</h3>
-      <p>There is a myriad of fake news sites popping up every single day. We need your help to keep our database up to date with the latest information. Anyone can submit a pull request on the github repository to add a host to the list. Details on what constitutes a fake news site are listed on the <a href="https://github.com/peerfact/peerfact.github.io">repository</a> wiki.</p>
+        <h3>Contributing</h3>
+        <p>There is a myriad of fake news sites popping up every single day. We need your help to keep our database up to date with the latest information. Anyone can submit a pull request on the github repository to add a host to the list. Details on what constitutes a fake news site are listed on the <a href="https://github.com/peerfact/peerfact.github.io">repository</a> wiki.</p>
+        <p>An up-to-date list of blacklisted sites can be found <a href="details.html">here</a>.</p>
 
-      <footer class="site-footer">
-
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
-      </footer>
+        <footer class="site-footer">
+            <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+        </footer>
 
     </section>
 
-<script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-ga('create', 'UA-73675818-1', 'auto');
-ga('send', 'pageview');
+    ga('create', 'UA-73675818-1', 'auto');
+    ga('send', 'pageview');
+    </script>
 
-</script>
-
-  </body>
+</body>
 </html>
