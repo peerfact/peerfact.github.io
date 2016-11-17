@@ -53,6 +53,9 @@
         },
         {
             "host": "denverguardian.com"
+        },
+        {
+            "host": "aszdziennik.pl"
         }
     ]
 }
