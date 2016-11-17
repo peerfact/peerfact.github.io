@@ -184,11 +184,16 @@
 				fetch('hosts.json').then(function (res) {
 					return res.json();
 				}).then(function (data) {
-					var list = "";
-					for (var i = 0; i < data.fakenews.length; i++) {
-						list += "<li>" + data.fakenews[i].host + "</li>";
+					function getListType (type) {
+						var list = "";
+						for (var i = 0; i < data[type].length; i++) {
+							list += "<li>" + data[type][i].host + "</li>";
+						}
+						return list;
 					}
-					$(".details-body").html("<h3>Blacklisted Sites</h3><p>Submit domains to be added <a target='_blank' href='https://github.com/peerfact/peerfact.github.io/issues/new'>here</a></p><ul>" + list + "</ul>");
+					var fakenews = getListType("fakenews");
+					var satire = getListType("satire");
+					$(".details-body").html("<h3>Sites Database</h3><p>Submit domains to be added <a target='_blank' href='https://github.com/peerfact/peerfact.github.io/issues/new'>here</a></p><h4>Fake News Sites</h4><ul>" + fakenews + "</ul><h4>Satirical Sites</h4><ul>" + satire + "</ul>");
 				});
 			}
 		})();
