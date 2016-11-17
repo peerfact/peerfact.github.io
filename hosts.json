@@ -54,5 +54,10 @@
         {
             "host": "denverguardian.com"
         }
+    ],
+    "satire": [
+        {
+            "host": "aszdziennik.pl"
+        }
     ]
 }
