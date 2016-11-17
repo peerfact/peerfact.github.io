@@ -50,6 +50,9 @@
         },
         {
             "host": "rilenews.com"
+        },
+        {
+            "host": "denverguardian.com"
         }
     ]
 }
