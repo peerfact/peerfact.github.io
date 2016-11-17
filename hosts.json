@@ -58,6 +58,9 @@
     "satire": [
         {
             "host": "aszdziennik.pl"
+        },
+        {
+            "host": "theonion.com"
         }
     ]
 }
